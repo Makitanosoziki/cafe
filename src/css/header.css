@@ -1,6 +1,7 @@
-.main-logo {
+.main-logo-img {
     margin-left: 10px;
     margin-top: 10px;
+    cursor: pointer;
 }
 
 .nav {
@@ -106,6 +107,7 @@
 }
 
 .drawer-item {
+    cursor: pointer;
     margin-bottom: 23px;
     font-size: 40px;
     color: #551f1f;
@@ -246,8 +248,7 @@
 
     .nav-item {
         display: none;
-
-            margin-top: 15px;
+        margin-top: 15px;
             margin-left: 10px;
 
     }
