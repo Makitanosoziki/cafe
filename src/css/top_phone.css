@@ -1,0 +1,279 @@
+/*スマホ用*/
+
+@media screen and (max-width: 767px) {
+
+    #index-content {
+        position: relative;
+        height: 4000px;
+    }
+
+    /*ヘッダー*/
+
+    .nav-item {
+        display: none;
+    }
+
+    /*ドロワーメニュー画面*/
+
+    #nav-content {
+        width: 100%;
+    }
+
+    .nav-drawer {
+        position: fixed;
+        z-index: 9999;
+        top: 0;
+        right: 0;
+    }
+
+    /*セカンドヘッダー*/
+
+    .secondHeader-figure-img {
+        height: 700px;
+    }
+
+    /*コンセプト*/
+
+    #concept {
+        width: 100%;
+        position: relative;
+        height: 1250px;
+
+        &::before {
+            content: "";
+            display: block;
+            background-color: #faeeea;
+            top: 170px;
+            width: 90%;
+            height: 290px;
+            position: absolute;
+            right: 0;
+            z-index: 0;
+        }
+    }
+
+    /*文章*/
+    .concept-document-container {
+        position: absolute;
+        top: 120px;
+        right: 0;
+        left: 0;
+        margin: auto;
+        z-index: 1;
+        width: 350px;
+        text-align: center;
+    }
+
+    .concept-title {
+        color: #551f1f;
+        line-height: 65px;
+        font-size: 35px;
+        font-family: 'Noto Serif JP', serif;
+        font-weight: 1;
+    }
+
+    .concept-docment {
+        margin-top: 25px;
+        color: #551f1f;
+        line-height: 40px;
+        font-size: 15px;
+        font-family: 'Noto Serif JP', serif;
+    }
+
+    /*画像*/
+
+    .concept-main-figure {
+        position: absolute;
+        bottom: 0;
+        margin: 15px;
+        margin-top: 25px;
+    }
+
+    .concept-main-figure-img {
+        width: 100%;
+    }
+
+    .cakeToka-figure-img {
+        display: none;
+    }
+
+    /*メニュー*/
+    .menu {
+        margin-top: 140px;
+        text-align: center;
+    }
+
+    /*文章*/
+    .menu_title {
+        margin-bottom: 40px;
+        margin-top: 40px;
+        font-size: 50px;
+        color: #551f1f;
+        font-family: 'Noto Serif JP', serif;
+        font-weight: 1;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    /*ボタン*/
+    .menu-button {
+        margin-top: 160px;
+        margin-left: 10px;
+        margin-right: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 30px;
+        font-size: 40px;
+        color: #551f1f;
+        font-size: 35px;
+        font-family: 'Noto Serif JP', serif;
+        font-weight: 1;
+        font-family: 'Montserrat', sans-serif;
+        border: 3px #551f1f solid
+    }
+
+    .menu-button-right {
+        float: right;
+    }
+
+    /*スライダー*/
+
+    /*箱のリセット*/
+    .bx-wrapper {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 100px;
+        margin-bottom: 150px;
+        width: 92%;
+        -moz-box-shadow: none;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        border: none;
+        background: none;
+    }
+
+    /*次へ前へボタン*/
+
+    .feed-prev-btn {
+        background-image: url(../img/bxSlider_prev.png);
+    }
+
+    .feed-next-btn {
+        background-image: url(../img/bxslider_next.png);
+    }
+
+    .feed-prev-btn:hover {
+        background-image: url(../img/bxSlider_prev.png);
+    }
+
+    .feed-next-btn:hover {
+        background-image: url(../img/bxslider_next.png);
+    }
+
+    .navi-btn {
+        margin: 79px 8px 0 9px;
+        width: 23px;
+        height: 23px;
+        -webkit-background-size: 23px;
+        background-size: 23px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        float: left;
+    }
+
+    /*キャンペーン*/
+    .canpaign {
+        margin-top: 180px;
+        width: 100%;
+        height: 1000px;
+        position: relative;
+    }
+
+    /*キャンペーン文章*/
+
+    .canpaign-document-container {
+        position: absolute;
+        top: 550px;
+        left: 0;
+        right: 0;
+        z-index: 5;
+        text-align: center;
+    }
+
+    .canpaign-title {
+        font-size: 50px;
+        color: #551f1f;
+        font-weight: 1;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .canpaign-document {
+        margin-top: 50px;
+        color: #551f1f;
+        line-height: 40px;
+        font-size: 20px;
+        font-family: 'Noto Serif JP', serif;
+        font-weight: 1;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    /*ボタン*/
+    .canpaign-button {
+        margin-top: 120px;
+        margin-left: 10px;
+        margin-right: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 30px;
+        font-size: 40px;
+        color: #551f1f;
+        font-size: 35px;
+        font-family: 'Noto Serif JP', serif;
+        font-weight: 1;
+        font-family: 'Montserrat', sans-serif;
+        border: 3px #551f1f solid
+    }
+
+    .canpaign-button-right {
+        float: right;
+    }
+
+    /*画像*/
+
+    .canpaign_coffeebeans_pc_top_img {
+        display: none;
+    }
+
+    .canpaign_mill_img {
+        position: absolute;
+        top: 60px;
+        right: 0;
+        z-index: 2;
+        width: 85%;
+        max-width: 560px;
+    }
+
+    .canpaign_coffee_img {
+        position: absolute;
+        max-width: 225px;
+        top: 22%;
+        z-index: 3;
+        width: 40%;
+    }
+
+    .canpaign_coffee_toka_img {
+        position: absolute;
+        bottom: -14%;
+        right: 0px;
+        z-index: 4;
+        max-width: 295px;
+        width: 55%;
+    }
+
+    .canpaign_coffeebeans_pc_under_img {
+        bottom: 0%;
+        left: 0%;
+        position: absolute;
+        z-index: 3;
+        width: 45%;
+    }
+}

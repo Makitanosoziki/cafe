@@ -1,0 +1,50 @@
+#company-content {
+    padding-top: 100px;
+    height: 800px;
+}
+
+.companyProfile-list-container {
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#company-title {
+    text-align: center;
+    margin-bottom: 80px;
+    margin-top: 20px;
+    font-size: 50px;
+    color: #551f1f;
+    font-weight: 1;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.companyProfile-list {
+    font-family: "M PLUS 1p"; 
+    display: flex;
+    border-bottom: 2px solid #ba7f71;
+    color: #551f1f;
+
+    &:nth-of-type(1) {
+        border-top: 2px solid #ba7f71;
+        color: #551f1f;
+    }
+}
+
+.companyProfile-list-label {
+    background-color: #faeeea;
+    border-left: 2px solid #ba7f71;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 15px;
+    width: 50%;
+}
+
+.companyProfile-list-item {
+    border-left: 2px solid #ba7f71;
+    border-right: 2px solid #ba7f71;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 15px;
+    width: 50%;
+}

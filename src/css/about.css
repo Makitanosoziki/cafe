@@ -1,0 +1,261 @@
+/* パソコン用 */
+@media screen and (min-width: 767px) {
+    #about-content {
+        position: relative;
+        height: 1900px;
+        width: 100%;
+    }
+
+    #storeIntroduction {
+        position: relative;
+        height: 620px;
+
+        &::after {
+            position: absolute;
+            right: 22%;
+            top: 110px;
+            content: "";
+            display: block;
+            width: 50%;
+            height: 400px;
+            background-color: #faeeea;
+            z-index: 0;
+        }
+    }
+
+    .about-title {
+        text-align: center;
+        padding-top: 150px;
+        margin-bottom: 110px;
+        color: #551f1f;
+        line-height: 65px;
+        font-size: 35px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 1;
+    }
+
+    .aboutDocuments-container {
+        z-index: 2;
+        position: absolute;
+        right: 8%;
+        top: 100px;
+    }
+
+    #aboutItem-title {
+        text-shadow: 1px 1px 0 #FFF, -1px -1px 0 #FFF,
+        -1px 1px 0 #FFF, 1px -1px 0 #FFF,
+        0px 1px 0 #FFF, 0-1px 0 #FFF,
+        -1px 0 0 #FFF, 1px 0 0 #FFF;
+        font-family: 'Noto Serif JP', serif;
+        color: #551f1f;
+        font-size: 23px;
+    }
+
+    #aboutItem-discription {
+        text-shadow: 1px 1px 0 #FFF, -1px -1px 0 #FFF,
+        -1px 1px 0 #FFF, 1px -1px 0 #FFF,
+        0px 1px 0 #FFF, 0-1px 0 #FFF,
+        -1px 0 0 #FFF, 1px 0 0 #FFF;
+        width: 300px;
+        margin-top: 30px;
+        font-family: 'Noto Serif JP', serif;
+        color: #551f1f;
+        font-size: 15px;
+        line-height: 35px;
+    }
+
+    #about-figure {
+        z-index: 1;
+        position: absolute;
+    }
+
+    #about-figure-img {
+        height: 450px;
+        width: 450px;
+        object-fit: cover;
+    }
+
+    #access {
+        position: relative;
+        height: 1000px;
+    }
+
+    #access-title {
+        top: 520px;
+        left: 5%;
+        position: absolute;
+        text-align: center;
+        margin-bottom: 110px;
+        color: #551f1f;
+        line-height: 65px;
+        font-size: 35px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 1;
+    }
+
+    .googleMap {
+        width: 100%;
+    }
+
+    .table {
+        width: 90%;
+        margin-top: 200px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .table-row {
+        display: inline-block;
+        width: 100%;
+        font-size: 15px;
+        color: #551f1f;
+        border-bottom: 1px solid #ba7f71;
+
+        &:nth-of-type(1) {
+            border-top: 1px solid #ba7f71;
+        }
+    }
+
+    .table-label {
+        padding-left: 15px;
+        width: 150px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .table-description {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+}
+
+/* スマホ用 */
+@media screen and (max-width: 767px) {
+    #about-content {
+        position: relative;
+        height: 2000px;
+        width: 100%;
+    }
+
+    #storeIntroduction {
+        position: relative;
+        height: 900px;
+
+        &::after {
+            position: absolute;
+            right: 0;
+            top: 400px;
+            content: "";
+            display: inline-block;
+            width: 90%;
+            height: 300px;
+            background-color: #faeeea;
+            z-index: 0;
+        }
+    }
+
+    .about-title {
+        text-align: center;
+        padding-top: 50px;
+        padding-bottom: 60px;
+        color: #551f1f;
+        line-height: 65px;
+        font-size: 35px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 1;
+    }
+
+    .aboutDocuments-container {
+        right: 0;
+        left: 0;
+        margin: auto;
+        z-index: 2;
+        position: absolute;
+        top: 400px;
+    }
+
+    #aboutItem-title {
+        text-align: center;
+        font-family: 'Noto Serif JP', serif;
+        color: #551f1f;
+        font-size: 30px;
+        margin-bottom: 50px;
+    }
+
+    #aboutItem-discription {
+        right: 0;
+        left: 0;
+        margin: auto;
+        text-align: center;
+        width: 300px;
+        font-family: 'Noto Serif JP', serif;
+        color: #551f1f;
+        font-size: 15px;
+        line-height: 35px;
+    }
+
+
+    #about-figure {
+        z-index: 1;
+        position: absolute;
+    }
+
+    #about-figure-img {
+        height: 300px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    #access {
+        position: relative;
+        height: 750px;
+    }
+
+    #access-title {
+        top: 520px;
+        left: 5%;
+        position: absolute;
+        text-align: center;
+        margin-bottom: 110px;
+        color: #551f1f;
+        line-height: 65px;
+        font-size: 35px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 1;
+    }
+
+    .googleMap {
+        width: 100%;
+    }
+
+    .table {
+        width: 90%;
+        margin-top: 200px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .table-row {
+        display: inline-block;
+        width: 100%;
+        font-size: 15px;
+        color: #551f1f;
+        border-bottom: 1px solid #ba7f71;
+
+        &:nth-of-type(1) {
+            border-top: 1px solid #ba7f71;
+        }
+    }
+
+    .table-label {
+        padding-left: 15px;
+        width: 150px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .table-description {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+}

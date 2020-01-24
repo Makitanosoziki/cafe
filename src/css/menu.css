@@ -1,0 +1,241 @@
+
+
+/* パソコン用 */
+@media screen and (min-width: 767px) {
+    .menuHeader-title {
+        padding-top: 100px;
+        color: #551f1f;
+        line-height: 65px;
+        font-size: 35px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 1;
+    }
+
+    #menu-content {
+        background-color: #fef9ed;
+        position: relative;
+    }
+    
+    .menuHeader {
+        background-color: white;
+        text-align: center;
+        padding-bottom: 130px;
+    }
+    
+    .menuHeader-figure {
+        margin-top: 80px;
+    }
+    
+    .menuHeader-figure-img {
+        width: 100%;
+    }
+    
+    .menuHeader-description {
+        margin-top: 130px;
+        color: #551f1f;
+        font-family: 'M PLUS 1p', sans-serif;
+    }
+    
+    .menuImgs {
+        padding-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 92%;
+        max-width: 900px;
+        display: flex;
+    }
+    
+    .menuImg-list {
+        margin-top: 40px;
+        text-align: center;
+        width: 25%;
+        color: #551f1f;
+        font-family: 'M PLUS 1p', sans-serif;
+    }
+    
+    .menuImg-list-figure-img {
+        width: 80%;
+    }
+    
+    .menuImg-list-description {
+        font-size: 15px;
+        margin-top: 20px;
+    }
+    
+    .menu-content-item {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        color: #551f1f;
+        background-color: #fef9ed;
+        text-align: center;
+    }
+    
+    #cafeMenu {
+        padding-top: 120px;
+    }
+    
+    #sweetsMenu {
+        padding-bottom: 130px;
+    }
+    
+    .main-content-item-title {
+        text-align: center;
+        color: #551f1f;
+        margin-bottom: 50px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: normal;
+        font-style: normal;
+        font-size: 28px;
+    }
+    
+    .menu-items {
+        margin-left: auto;
+        margin-right: auto;
+        width: 92%;
+        max-width: 900px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .price-list {
+        justify-content: space-between;
+        display: flex;
+        width: 40%;
+        color: #551f1f;
+        max-width: 375px;
+        line-height: 50px;
+    }
+    
+    .price-list-label {
+        font-family: 'M PLUS 1p', sans-serif;
+    }
+    
+    
+    .price-list-value {
+        font-family: 'Open Sans', sans-serif;
+        font-family: 'Montserrat', sans-serif;
+    }
+}
+
+/* スマホ用 */
+@media screen and (max-width: 767px) {
+    .menuHeader-title {
+        color: #551f1f;
+        margin-top: 60px;
+        margin-bottom: 70px;
+        font-size: 35px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 1;
+        text-align: center;
+    }
+
+    #menu-content {
+        background-color: #fef9ed;
+        position: relative;
+    }
+    
+    .menuHeader {
+        background-color: white;
+        text-align: center;
+        padding-bottom: 80px;
+    }
+    
+    .menuHeader-figure {
+        margin-top: 30px;
+    }
+    
+    .menuHeader-figure-img {
+        width: 100%;
+    }
+    
+    .menuHeader-description {
+        margin-top: 80px;
+        color: #551f1f;
+        font-family: 'M PLUS 1p', sans-serif;
+    }
+    
+    .menuImgs {
+        padding-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 92%;
+        display: flex;
+    }
+    
+    .menuImg-list {
+        margin-top: 40px;
+        text-align: center;
+        width: 50%;
+        color: #551f1f;
+        font-family: 'M PLUS 1p', sans-serif;
+    }
+
+    .menuImg-list-figure-img {
+        width: 80%;
+    }
+    
+    .menuImg-list-description {
+        font-size: 15px;
+        margin-top: 20px;
+    }
+    
+    .menu-content-item {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        color: #551f1f;
+        background-color: #fef9ed;
+        text-align: center;
+    }
+    
+    #cafeMenu {
+        padding-top: 100px;
+    }
+    
+    #sweetsMenu {
+        padding-bottom: 100px;
+    }
+    
+    .main-content-item-title {
+        text-align: center;
+        color: #551f1f;
+        margin-bottom: 50px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: normal;
+        font-style: normal;
+        font-size: 28px;
+    }
+    
+    .menu-items {
+        margin-left: auto;
+        margin-right: auto;
+        width: 92%;
+        max-width: 900px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .price-list {
+        justify-content: space-between;
+        display: flex;
+        width: 45%;
+        color: #551f1f;
+        max-width: 375px;
+        line-height: 50px;
+    }
+    
+    .price-list-label {
+        font-family: 'M PLUS 1p', sans-serif;
+    }
+    
+    
+    .price-list-value {
+        font-family: 'Open Sans', sans-serif;
+        font-family: 'Montserrat', sans-serif;
+    }
+}

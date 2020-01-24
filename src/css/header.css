@@ -1,0 +1,282 @@
+.main-logo {
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.nav {
+    list-style: none;
+    color: #551f1f;
+    font-size: 40px;
+    display: flex;
+}
+
+/*ドロワーメニュー画面*/f
+
+#nav-drawer {
+    position: relative;
+}
+
+#nav-batten {
+    display: none;
+}
+
+/*チェックボックス等は非表示に*/
+.nav-unshown {
+    display: none;
+}
+
+/*アイコンのスペース*/
+#nav-open {
+    display: block;
+    width: 63px;
+    height: 25px;
+    vertical-align: middle;
+
+    & span {
+        margin-top: 20px;
+        margin-left: 15px;
+    }
+
+    /*ハンバーガーアイコンをCSSだけで表現*/
+    & span,
+    & span:before,
+    & span:after {
+        position: absolute;
+        height: 4px;
+        /*線の太さ*/
+        width: 37px;
+        /*長さ*/
+        background: #551f1f;
+        display: block;
+        content: '';
+        cursor: pointer;
+    }
+
+    & span:before {
+        bottom: -14px;
+    }
+
+    & span:after {
+        bottom: -28px;
+    }
+}
+
+/*閉じる用の薄黒カバー*/
+#nav-close {
+    display: none;
+    /*はじめは隠しておく*/
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    /*全体に広がるように*/
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: 0;
+    transition: .3s ease-in-out;
+}
+
+/*チェックが入ったらもろもろ表示*/
+#nav-input:checked ~ #nav-close {
+    display: block;
+    /* カバーを表示 */
+    opacity: 0.5;
+}
+
+#nav-input:checked ~ #nav-batten {
+    cursor: pointer;
+    display: block;
+}
+
+#nav-input:checked ~ #nav-content {
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
+    /* 中身を表示(右へスライド) */
+    box-shadow: 6px 0 25px rgba(0, 0, 0, .15);
+}
+
+/*ドロワーメニュー内容*/
+.drawer-content {
+    position: static;
+    z-index: 999;
+    display: table-cell;
+    vertical-align: middle;
+    list-style: none;
+}
+
+.drawer-item {
+    margin-bottom: 23px;
+    font-size: 40px;
+    color: #551f1f;
+    font-weight: 1;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.drawer-icon {
+    margin-top: 30px;
+    margin-right: 5px;
+    display: inline-block;
+}
+
+/* ばってんマーク */
+#nav-batten {
+    & span {
+        top: 30px;
+        right: 50px;
+        position: absolute;
+        z-index: 99999;
+    }
+
+    & span::before,
+    & span::after {
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 40px;
+        height: 3px;
+        margin: -8% 0 0 -42%;
+        content: '';
+        background-color: #551f1f;
+    }
+
+    & span::before {
+        transform: rotate(-45deg);
+    }
+
+    & span::after {
+        transform: rotate(45deg);
+    }
+}
+
+
+/*セカンドヘッダー*/
+
+.secondHeader {
+    height: 480px;
+    position: relative;
+}
+
+.secondHeader-figure {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.secondHeader-figure-img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.secondHeader-logo-img {
+    position: absolute;
+    width: 180px;
+    left: 50%;
+    margin-left: -90px;
+    top: 50%;
+}
+
+/*メニュー*/
+
+.menu {
+    text-align: center;
+}
+
+/*ページャーの色変える*/
+.bx-wrapper .bx-pager.bx-default-pager a {
+    background: #faeeea;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a:hover,
+ .bx-wrapper .bx-pager.bx-default-pager a.active,
+ .bx-wrapper .bx-pager.bx-default-pager a:focus {
+    background: #ab6776;
+}
+
+@media screen and (min-width: 767px) {
+    /*ヘッダー*/
+    #header {
+        position: fixed;
+        width: 100%;
+        z-index: 9999;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        background-color: white;
+    }
+
+    /*ドロワーメニュー画面*/
+    #nav-content {
+        overflow: auto;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 9999;
+        /*最前面に*/
+        width: 400px;
+        height: 100%;
+        transition: .3s ease-in-out;
+        /* 滑らかに表示 */
+        -webkit-transform: translateX(105%);
+        transform: translateX(105%);
+        /* 左に隠しておく */
+        background-color: #faeeea;
+        display: table;
+        text-align: center;
+        width: 400px;
+    }
+
+    .nav-item {
+        margin-top: 15px;
+        margin-left: 10px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    /*ヘッダー*/
+    #header {
+        width: 100%;
+        z-index: 9999;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        background-color: white;
+    }
+
+    .nav-item {
+        display: none;
+
+            margin-top: 15px;
+            margin-left: 10px;
+
+    }
+
+    /*ドロワーメニュー画面*/
+    #nav-content {
+        width: 100%;
+        overflow: auto;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 9999;
+        /*最前面に*/
+        width: 400px;
+        height: 100%;
+        transition: .3s ease-in-out;
+        /* 滑らかに表示 */
+        -webkit-transform: translateX(105%);
+        transform: translateX(105%);
+        /* 左に隠しておく */
+        background-color: #faeeea;
+        display: table;
+        text-align: center;
+    }
+
+    .nav-drawer {
+        position: fixed;
+        z-index: 9999;
+        top: 0;
+        right: 0;
+    }
+}
