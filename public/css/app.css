@@ -96,9 +96,10 @@ hr {
 input, select {
 	vertical-align:middle;
 }
-.main-logo {
+.main-logo-img {
     margin-left: 10px;
     margin-top: 10px;
+    cursor: pointer;
 }
 
 .nav {
@@ -207,12 +208,16 @@ input, select {
 }
 
 .drawer-item {
-    margin-bottom: 23px;
-    font-size: 40px;
-    color: #551f1f;
-    font-weight: 1;
-    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 23px
 }
+
+.drawer-item a {
+        font-size: 40px;
+        color: #551f1f;
+        font-weight: 1;
+        font-family: 'Montserrat', sans-serif;
+        text-decoration: none;
+    }
 
 .drawer-icon {
     margin-top: 30px;
@@ -354,8 +359,7 @@ input, select {
 
     .nav-item {
         display: none;
-
-            margin-top: 15px;
+        margin-top: 15px;
             margin-left: 10px;
 
     }
@@ -769,7 +773,7 @@ input, select {
     #concept {
         width: 100%;
         position: relative;
-        height: 1250px
+        height: 1050px
     }
 
         #concept::before {
@@ -854,17 +858,25 @@ input, select {
         padding-top: 5px;
         padding-bottom: 5px;
         padding-left: 30px;
-        font-size: 40px;
-        color: #551f1f;
-        font-size: 35px;
-        font-family: 'Noto Serif JP', serif;
-        font-weight: 1;
-        font-family: 'Montserrat', sans-serif;
         border: 3px #551f1f solid
     }
 
+        .menu-button a {
+            font-size: 40px;
+            color: #551f1f;
+            font-size: 35px;
+            font-weight: 1;
+            font-family: 'Montserrat', sans-serif;
+            text-decoration: none;
+        }
+
     .menu-button-right {
         float: right;
+        font-size: 40px;
+        color: #551f1f;
+        font-size: 35px;
+        font-weight: 1;
+        font-family: 'Montserrat', sans-serif;
     }
 
     /*スライダー*/
@@ -954,17 +966,25 @@ input, select {
         padding-top: 5px;
         padding-bottom: 5px;
         padding-left: 30px;
-        font-size: 40px;
-        color: #551f1f;
-        font-size: 35px;
-        font-family: 'Noto Serif JP', serif;
-        font-weight: 1;
-        font-family: 'Montserrat', sans-serif;
         border: 3px #551f1f solid
     }
+        
+        .canpaign-button a {
+            font-size: 40px;
+            color: #551f1f;
+            font-size: 35px;
+            font-weight: 1;
+            font-family: 'Montserrat', sans-serif;
+            text-decoration: none;
+        }
 
     .canpaign-button-right {
         float: right;
+        font-size: 40px;
+        color: #551f1f;
+        font-size: 35px;
+        font-weight: 1;
+        font-family: 'Montserrat', sans-serif;
     }
 
     /*画像*/
@@ -1405,17 +1425,24 @@ input, select {
         padding-bottom: 5px;
         padding-left: 30px;
         width: 250px;
-        font-size: 40px;
-        color: #551f1f;
-        font-size: 35px;
-        font-family: 'Noto Serif JP', serif;
-        font-weight: 1;
-        font-family: 'Montserrat', sans-serif;
         border: 3px #551f1f solid
     }
+        .menu-button a {
+            font-size: 40px;
+            color: #551f1f;
+            font-size: 35px;
+            font-weight: 1;
+            font-family: 'Montserrat', sans-serif;
+            text-decoration: none;
+        }
 
     .menu-button-right {
         float: right;
+        font-size: 40px;
+        color: #551f1f;
+        font-size: 35px;
+        font-weight: 1;
+        font-family: 'Montserrat', sans-serif;
     }
 
     /*スライダー*/
@@ -1482,16 +1509,23 @@ input, select {
         padding-bottom: 5px;
         padding-left: 85px;
         width: 195px;
-        font-size: 40px;
+        border: 3px #551f1f solid
+    }
+        .canpaign-button a {
+            color: #551f1f;
+            font-size: 35px;
+            font-weight: 1;
+            font-family: 'Montserrat', sans-serif;
+            text-decoration: none;
+        }
+
+    .canpaign-button-right {
+        float: right;
         color: #551f1f;
         font-size: 35px;
         font-weight: 1;
         font-family: 'Montserrat', sans-serif;
-        border: 3px #551f1f solid
-    }
-
-    .canpaign-button-right {
-        float: right;
+        text-decoration: none;
     }
 
     /*画像*/

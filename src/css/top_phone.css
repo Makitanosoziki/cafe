@@ -37,7 +37,7 @@
     #concept {
         width: 100%;
         position: relative;
-        height: 1250px;
+        height: 1050px;
 
         &::before {
             content: "";
@@ -122,17 +122,25 @@
         padding-top: 5px;
         padding-bottom: 5px;
         padding-left: 30px;
-        font-size: 40px;
-        color: #551f1f;
-        font-size: 35px;
-        font-family: 'Noto Serif JP', serif;
-        font-weight: 1;
-        font-family: 'Montserrat', sans-serif;
-        border: 3px #551f1f solid
+        border: 3px #551f1f solid;
+
+        & a {
+            font-size: 40px;
+            color: #551f1f;
+            font-size: 35px;
+            font-weight: 1;
+            font-family: 'Montserrat', sans-serif;
+            text-decoration: none;
+        }
     }
 
     .menu-button-right {
         float: right;
+        font-size: 40px;
+        color: #551f1f;
+        font-size: 35px;
+        font-weight: 1;
+        font-family: 'Montserrat', sans-serif;
     }
 
     /*スライダー*/
@@ -224,17 +232,25 @@
         padding-top: 5px;
         padding-bottom: 5px;
         padding-left: 30px;
-        font-size: 40px;
-        color: #551f1f;
-        font-size: 35px;
-        font-family: 'Noto Serif JP', serif;
-        font-weight: 1;
-        font-family: 'Montserrat', sans-serif;
-        border: 3px #551f1f solid
+        border: 3px #551f1f solid;
+        
+        & a {
+            font-size: 40px;
+            color: #551f1f;
+            font-size: 35px;
+            font-weight: 1;
+            font-family: 'Montserrat', sans-serif;
+            text-decoration: none;
+        }
     }
 
     .canpaign-button-right {
         float: right;
+        font-size: 40px;
+        color: #551f1f;
+        font-size: 35px;
+        font-weight: 1;
+        font-family: 'Montserrat', sans-serif;
     }
 
     /*画像*/
