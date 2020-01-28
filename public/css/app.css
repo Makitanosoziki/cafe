@@ -1224,7 +1224,6 @@ input, select {
         line-height: 35px;
     }
 
-
     #about-figure {
         z-index: 1;
         position: absolute;
@@ -1473,12 +1472,12 @@ input, select {
         width: 100%;
     }
 
-    #storeIntroduction {
+    #campaignIntroduction {
         position: relative;
         height: 620px
     }
 
-        #storeIntroduction::after {
+        #campaignIntroduction::after {
             position: absolute;
             right: 22%;
             top: 110px;
@@ -1490,7 +1489,7 @@ input, select {
             z-index: 0;
         }
 
-    .about-title {
+    .campaign-title {
         text-align: center;
         padding-top: 150px;
         margin-bottom: 110px;
@@ -1501,14 +1500,14 @@ input, select {
         font-weight: 1;
     }
 
-    .aboutDocuments-container {
+    .campaignDocuments-container {
         z-index: 2;
         position: absolute;
         right: 8%;
         top: 100px;
     }
 
-    #aboutItem-title {
+    #campaignItem-title {
         text-shadow: 1px 1px 0 #FFF, -1px -1px 0 #FFF,
         -1px 1px 0 #FFF, 1px -1px 0 #FFF,
         0px 1px 0 #FFF, 0-1px 0 #FFF,
@@ -1518,7 +1517,7 @@ input, select {
         font-size: 23px;
     }
 
-    #aboutItem-discription {
+    #campaignItem-discription {
         text-shadow: 1px 1px 0 #FFF, -1px -1px 0 #FFF,
         -1px 1px 0 #FFF, 1px -1px 0 #FFF,
         0px 1px 0 #FFF, 0-1px 0 #FFF,
@@ -1531,12 +1530,12 @@ input, select {
         line-height: 35px;
     }
 
-    #about-figure {
+    #campaign-figure {
         z-index: 1;
         position: absolute;
     }
 
-    #about-figure-img {
+    #campaign-figure-img {
         height: 450px;
         width: 450px;
         -o-object-fit: cover;
@@ -1548,28 +1547,28 @@ input, select {
 @media screen and (max-width: 767px) {
     #campaign-content {
         position: relative;
-        height: 1000px;
+        height: 1050px;
         width: 100%;
     }
 
-    #storeIntroduction {
+    #campaignIntroduction {
         position: relative;
         height: 900px
     }
 
-        #storeIntroduction::after {
+        #campaignIntroduction::after {
             position: absolute;
             right: 0;
             top: 425px;
             content: "";
             display: inline-block;
             width: 90%;
-            height: 280px;
+            height: 250px;
             background-color: #faeeea;
             z-index: 0;
         }
 
-    .about-title {
+    .campaign-title {
         text-align: center;
         padding-top: 50px;
         padding-bottom: 60px;
@@ -1580,7 +1579,7 @@ input, select {
         font-weight: 1;
     }
 
-    .aboutDocuments-container {
+    .campaignDocuments-container {
         right: 0;
         left: 0;
         margin: auto;
@@ -1589,7 +1588,7 @@ input, select {
         top: 400px;
     }
 
-    #aboutItem-title {
+    #campaignItem-title {
         text-align: center;
         font-family: 'Noto Serif JP', serif;
         color: #551f1f;
@@ -1597,7 +1596,7 @@ input, select {
         margin-bottom: 50px;
     }
 
-    #aboutItem-discription {
+    #campaignItem-discription {
         right: 0;
         left: 0;
         margin: auto;
@@ -1609,18 +1608,18 @@ input, select {
         line-height: 35px;
     }
 
-
-    #about-figure {
+    #campaign-figure {
         z-index: 1;
         position: absolute;
     }
 
-    #about-figure-img {
+    #campaign-figure-img {
         height: 300px;
         width: 100%;
         -o-object-fit: cover;
            object-fit: cover;
     }
+
 }
 /*パソコン用*/
 @media screen and (min-width: 767px) {
