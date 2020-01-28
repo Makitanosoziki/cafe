@@ -1,4 +1,14 @@
 import '../css/app.css'
 import { addNumber  } from './util'
 
-console.log(addNumber(1, 2))
+// window.addEventListener("scroll", () => {
+//     const srollVal = window.pageYOffset;
+//     if (srollVal > contentsPosition) {
+//       // 発火させるイベント
+      
+//     }
+//   });
+
+  const conceptMainImg = querySelector('.concept-main-figure');
+
+  console.log(conceptMainImg);

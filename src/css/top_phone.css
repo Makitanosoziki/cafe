@@ -4,7 +4,7 @@
 
     #index-content {
         position: relative;
-        height: 4000px;
+        height: 3850px;
     }
 
     /*ヘッダー*/
@@ -37,7 +37,7 @@
     #concept {
         width: 100%;
         position: relative;
-        height: 1050px;
+        height: 1100px;
 
         &::before {
             content: "";

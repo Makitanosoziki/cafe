@@ -1,8 +1,8 @@
 /* パソコン用 */
 @media screen and (min-width: 767px) {
-    #about-content {
+    #campaign-content {
         position: relative;
-        height: 1900px;
+        height: 1010px;
         width: 100%;
     }
 
@@ -74,66 +74,13 @@
         width: 450px;
         object-fit: cover;
     }
-
-    #access {
-        position: relative;
-        height: 1000px;
-    }
-
-    #access-title {
-        top: 520px;
-        left: 5%;
-        position: absolute;
-        text-align: center;
-        margin-bottom: 110px;
-        color: #551f1f;
-        line-height: 65px;
-        font-size: 35px;
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 1;
-    }
-
-    .googleMap {
-        width: 100%;
-    }
-
-    .table {
-        width: 90%;
-        margin-top: 200px;
-        margin-right: auto;
-        margin-left: auto;
-    }
-
-    .table-row {
-        display: inline-block;
-        width: 100%;
-        font-size: 15px;
-        color: #551f1f;
-        border-bottom: 1px solid #ba7f71;
-
-        &:nth-of-type(1) {
-            border-top: 1px solid #ba7f71;
-        }
-    }
-
-    .table-label {
-        padding-left: 15px;
-        width: 150px;
-        padding-top: 15px;
-        padding-bottom: 15px;
-    }
-
-    .table-description {
-        padding-top: 15px;
-        padding-bottom: 15px;
-    }
 }
 
 /* スマホ用 */
 @media screen and (max-width: 767px) {
-    #about-content {
+    #campaign-content {
         position: relative;
-        height: 2000px;
+        height: 1000px;
         width: 100%;
     }
 
@@ -204,58 +151,5 @@
         height: 300px;
         width: 100%;
         object-fit: cover;
-    }
-
-    #access {
-        position: relative;
-        height: 750px;
-    }
-
-    #access-title {
-        top: 520px;
-        left: 5%;
-        position: absolute;
-        text-align: center;
-        margin-bottom: 110px;
-        color: #551f1f;
-        line-height: 65px;
-        font-size: 35px;
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 1;
-    }
-
-    .googleMap {
-        width: 100%;
-    }
-
-    .table {
-        width: 90%;
-        margin-top: 200px;
-        margin-right: auto;
-        margin-left: auto;
-    }
-
-    .table-row {
-        display: inline-block;
-        width: 100%;
-        font-size: 15px;
-        color: #551f1f;
-        border-bottom: 1px solid #ba7f71;
-
-        &:nth-of-type(1) {
-            border-top: 1px solid #ba7f71;
-        }
-    }
-
-    .table-label {
-        padding-left: 15px;
-        width: 150px;
-        padding-top: 15px;
-        padding-bottom: 15px;
-    }
-
-    .table-description {
-        padding-top: 15px;
-        padding-bottom: 15px;
     }
 }
