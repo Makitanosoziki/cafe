@@ -1,14 +1,11 @@
 import '../css/app.css'
 import { addNumber  } from './util'
 
-// window.addEventListener("scroll", () => {
-//     const srollVal = window.pageYOffset;
-//     if (srollVal > contentsPosition) {
-//       // 発火させるイベント
-      
-//     }
-//   });
+  const mainFigure = document.querySelector('.concept-main-figure');
+  const mainFigurePosition = mainFigure.getBoundingClientRect();
 
-  const conceptMainImg = querySelector('.concept-main-figure');
+  console.log(mainFigurePosition.top);
 
-  console.log(conceptMainImg);
+  if(mainFigurePosition.top === 82) {
+    mainFigurePosition.classList.add('on');
+  }
