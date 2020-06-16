@@ -50,7 +50,6 @@
         background: #551f1f;
         display: block;
         content: '';
-        cursor: pointer;
     }
 
     & span:before {

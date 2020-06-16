@@ -82,15 +82,13 @@
 
     /*画像*/
 
-    .concept-main-figure {
+    .concept-main-figure-img {
         position: absolute;
         bottom: 0;
-        margin: 15px;
-        margin-top: 25px;
-    }
-
-    .concept-main-figure-img {
-        width: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 93%;
+        max-width: 640px;
     }
 
     .cakeToka-figure-img {
