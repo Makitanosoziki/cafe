@@ -119,16 +119,26 @@
         margin-right: 10px;
         padding-top: 5px;
         padding-bottom: 5px;
-        padding-left: 30px;
         border: 3px #551f1f solid;
+        position: relative;
 
         & a {
-            font-size: 40px;
+            display: block;
             color: #551f1f;
             font-size: 35px;
             font-weight: 1;
             font-family: 'Montserrat', sans-serif;
             text-decoration: none;
+
+            &::after {
+                content: '→';
+                font-size: 35px;
+                color: #551f1f;
+                position: absolute;
+                right: 5px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
         }
     }
 
@@ -205,7 +215,7 @@
         text-align: center;
     }
 
-    .campaign-title {
+    .top-campaign-title {
         font-size: 50px;
         color: #551f1f;
         font-weight: 1;
@@ -224,31 +234,32 @@
 
     /*ボタン*/
     .campaign-button {
-        margin-top: 120px;
+        margin-top: 60px;
         margin-left: 10px;
         margin-right: 10px;
         padding-top: 5px;
         padding-bottom: 5px;
-        padding-left: 30px;
         border: 3px #551f1f solid;
-        
+        position: relative;
+
         & a {
-            font-size: 40px;
+            display: block;
             color: #551f1f;
             font-size: 35px;
             font-weight: 1;
             font-family: 'Montserrat', sans-serif;
             text-decoration: none;
-        }
-    }
 
-    .campaign-button-right {
-        float: right;
-        font-size: 40px;
-        color: #551f1f;
-        font-size: 35px;
-        font-weight: 1;
-        font-family: 'Montserrat', sans-serif;
+            &::after {
+                content: '→';
+                font-size: 35px;
+                color: #551f1f;
+                position: absolute;
+                right: 5px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
     }
 
     /*画像*/
