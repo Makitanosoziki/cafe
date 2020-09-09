@@ -28,15 +28,15 @@
 
 /*アイコンのスペース*/
 #nav-open {
+    position: relative;
+    margin-right: 10px;
+    cursor: pointer;
     display: block;
-    width: 63px;
-    height: 25px;
+    padding-top: 14px;
+    width: 50px;
+    height: 46px;
     vertical-align: middle;
-
-    & span {
-        margin-top: 20px;
-        margin-left: 15px;
-    }
+    
 
     /*ハンバーガーアイコンをCSSだけで表現*/
     & span,
@@ -46,6 +46,7 @@
         height: 4px;
         /*線の太さ*/
         width: 37px;
+        right: 0;
         /*長さ*/
         background: #551f1f;
         display: block;
@@ -125,8 +126,10 @@
 /* ばってんマーク */
 #nav-batten {
     & span {
-        top: 30px;
-        right: 50px;
+        width: 50px;
+        height: 50px;
+        top: 12px;
+        right: 10px;
         position: absolute;
         z-index: 99999;
     }

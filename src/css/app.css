@@ -134,31 +134,32 @@
 
     /*ボタン*/
     .menu-button {
-        margin-top: 170px;
         margin-left: auto;
         margin-right: auto;
+        width: 300px;
+        margin-top: 170px;
         padding-top: 5px;
         padding-bottom: 5px;
-        padding-left: 30px;
-        width: 250px;
         border: 3px #551f1f solid;
+        position: relative;
         & a {
-            font-size: 40px;
+            display: block;
             color: #551f1f;
             font-size: 35px;
             font-weight: 1;
             font-family: 'Montserrat', sans-serif;
             text-decoration: none;
-        }
-    }
 
-    .menu-button-right {
-        float: right;
-        font-size: 40px;
-        color: #551f1f;
-        font-size: 35px;
-        font-weight: 1;
-        font-family: 'Montserrat', sans-serif;
+            &::after {
+                content: '→';
+                font-size: 35px;
+                color: #551f1f;
+                position: absolute;
+                right: 5px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
     }
 
     /*キャンペーン*/
@@ -206,19 +207,32 @@
 
     /*ボタン*/
     .campaign-button {
-        margin-left: 75px;
-        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 300px;
+        margin-top: 80px;
         padding-top: 5px;
         padding-bottom: 5px;
-        padding-left: 85px;
-        width: 195px;
         border: 3px #551f1f solid;
+        position: relative;
         & a {
+            text-align: center;
+            display: block;
             color: #551f1f;
             font-size: 35px;
             font-weight: 1;
             font-family: 'Montserrat', sans-serif;
             text-decoration: none;
+
+            &::after {
+                content: '→';
+                font-size: 35px;
+                color: #551f1f;
+                position: absolute;
+                right: 5px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
         }
     }
 
