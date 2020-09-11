@@ -86,7 +86,9 @@
         position: absolute;
         bottom: 0;
         width: 95%;
-        margin-left: 3.1%;
+        max-width: 640px;
+        right: 50%;
+        transform: translateX(50%);
     }
 
     .concept-main-figure-img {

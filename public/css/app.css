@@ -128,16 +128,15 @@ input, select {
 
 /*アイコンのスペース*/
 #nav-open {
+    position: relative;
+    margin-right: 10px;
+    cursor: pointer;
     display: block;
-    width: 63px;
-    height: 25px;
+    padding-top: 14px;
+    width: 50px;
+    height: 46px;
     vertical-align: middle
-}
-#nav-open span {
-        margin-top: 20px;
-        margin-left: 15px;
-    }
-#nav-open {
+    
 
     /*ハンバーガーアイコンをCSSだけで表現*/
 }
@@ -148,6 +147,7 @@ input, select {
         height: 4px;
         /*線の太さ*/
         width: 37px;
+        right: 0;
         /*長さ*/
         background: #551f1f;
         display: block;
@@ -226,8 +226,10 @@ input, select {
 
 /* ばってんマーク */
 #nav-batten span {
-        top: 30px;
-        right: 50px;
+        width: 50px;
+        height: 50px;
+        top: 12px;
+        right: 10px;
         position: absolute;
         z-index: 99999;
     }
@@ -681,25 +683,12 @@ input, select {
         font-family: 'Montserrat', sans-serif;
     }
 }
-#company-content {
-    padding-top: 100px;
-    height: 800px;
-}
+
 
 .companyProfile-list-container {
     width: 80%;
     margin-right: auto;
     margin-left: auto;
-}
-
-#company-title {
-    text-align: center;
-    margin-bottom: 80px;
-    margin-top: 20px;
-    font-size: 35px;
-    color: #551f1f;
-    font-weight: 1;
-    font-family: 'Montserrat', sans-serif;
 }
 
 .companyProfile-list {
@@ -732,6 +721,42 @@ input, select {
     padding-bottom: 30px;
     padding-left: 15px;
     width: 50%;
+}
+
+/* パソコン用 */
+@media screen and (min-width: 767px) {
+    #company-content {
+        padding-top: 100px;
+        height: 800px;
+    }
+    
+    #company-title {
+        text-align: center;
+        margin-bottom: 80px;
+        margin-top: 20px;
+        font-size: 35px;
+        color: #551f1f;
+        font-weight: 1;
+        font-family: 'Montserrat', sans-serif;
+    }
+}
+
+/* スマホ用 */
+@media screen and (max-width: 767px) {
+    #company-content {
+        height: 800px;
+    }
+
+    #company-title {
+        text-align: center;
+        padding-top: 50px;
+        padding-bottom: 60px;
+        color: #551f1f;
+        line-height: 65px;
+        font-size: 35px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 1;
+    }
 }
 /*スマホ用*/
 
@@ -772,7 +797,7 @@ input, select {
     #concept {
         width: 100%;
         position: relative;
-        height: 1100px
+        height: 1080px
     }
 
         #concept::before {
@@ -817,14 +842,15 @@ input, select {
 
     /*画像*/
 
-    .concept-main-figure-img {
+    .concept-main-figure {
         position: absolute;
         bottom: 0;
-        left: 50%;
-        -webkit-transform: translateX(-50%);
-                transform: translateX(-50%);
-        width: 93%;
-        max-width: 640px;
+        width: 95%;
+        margin-left: 3.1%;
+    }
+
+    .concept-main-figure-img {
+        width: 49%;
     }
 
     .cakeToka-figure-img {
@@ -855,18 +881,29 @@ input, select {
         margin-right: 10px;
         padding-top: 5px;
         padding-bottom: 5px;
-        padding-left: 30px;
-        border: 3px #551f1f solid
+        border: 3px #551f1f solid;
+        position: relative
     }
 
         .menu-button a {
-            font-size: 40px;
+            display: block;
             color: #551f1f;
             font-size: 35px;
             font-weight: 1;
             font-family: 'Montserrat', sans-serif;
-            text-decoration: none;
+            text-decoration: none
         }
+
+            .menu-button a::after {
+                content: '→';
+                font-size: 35px;
+                color: #551f1f;
+                position: absolute;
+                right: 5px;
+                top: 50%;
+                -webkit-transform: translateY(-50%);
+                        transform: translateY(-50%);
+            }
 
     .menu-button-right {
         float: right;
@@ -939,7 +976,7 @@ input, select {
         text-align: center;
     }
 
-    .campaign-title {
+    .top-campaign-title {
         font-size: 50px;
         color: #551f1f;
         font-weight: 1;
@@ -958,32 +995,34 @@ input, select {
 
     /*ボタン*/
     .campaign-button {
-        margin-top: 120px;
+        margin-top: 60px;
         margin-left: 10px;
         margin-right: 10px;
         padding-top: 5px;
         padding-bottom: 5px;
-        padding-left: 30px;
-        border: 3px #551f1f solid
+        border: 3px #551f1f solid;
+        position: relative
     }
-        
+
         .campaign-button a {
-            font-size: 40px;
+            display: block;
             color: #551f1f;
             font-size: 35px;
             font-weight: 1;
             font-family: 'Montserrat', sans-serif;
-            text-decoration: none;
+            text-decoration: none
         }
 
-    .campaign-button-right {
-        float: right;
-        font-size: 40px;
-        color: #551f1f;
-        font-size: 35px;
-        font-weight: 1;
-        font-family: 'Montserrat', sans-serif;
-    }
+            .campaign-button a::after {
+                content: '→';
+                font-size: 35px;
+                color: #551f1f;
+                position: absolute;
+                right: 5px;
+                top: 50%;
+                -webkit-transform: translateY(-50%);
+                        transform: translateY(-50%);
+            }
 
     /*画像*/
 
@@ -1736,32 +1775,34 @@ input, select {
 
     /*ボタン*/
     .menu-button {
-        margin-top: 170px;
         margin-left: auto;
         margin-right: auto;
+        width: 300px;
+        margin-top: 170px;
         padding-top: 5px;
         padding-bottom: 5px;
-        padding-left: 30px;
-        width: 250px;
-        border: 3px #551f1f solid
+        border: 3px #551f1f solid;
+        position: relative
     }
         .menu-button a {
-            font-size: 40px;
+            display: block;
             color: #551f1f;
             font-size: 35px;
             font-weight: 1;
             font-family: 'Montserrat', sans-serif;
-            text-decoration: none;
+            text-decoration: none
         }
 
-    .menu-button-right {
-        float: right;
-        font-size: 40px;
-        color: #551f1f;
-        font-size: 35px;
-        font-weight: 1;
-        font-family: 'Montserrat', sans-serif;
-    }
+            .menu-button a::after {
+                content: '→';
+                font-size: 35px;
+                color: #551f1f;
+                position: absolute;
+                right: 5px;
+                top: 50%;
+                -webkit-transform: translateY(-50%);
+                        transform: translateY(-50%);
+            }
 
     /*キャンペーン*/
 
@@ -1808,21 +1849,35 @@ input, select {
 
     /*ボタン*/
     .campaign-button {
-        margin-left: 75px;
-        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 300px;
+        margin-top: 80px;
         padding-top: 5px;
         padding-bottom: 5px;
-        padding-left: 85px;
-        width: 195px;
-        border: 3px #551f1f solid
+        border: 3px #551f1f solid;
+        position: relative
     }
         .campaign-button a {
+            text-align: center;
+            display: block;
             color: #551f1f;
             font-size: 35px;
             font-weight: 1;
             font-family: 'Montserrat', sans-serif;
-            text-decoration: none;
+            text-decoration: none
         }
+
+            .campaign-button a::after {
+                content: '→';
+                font-size: 35px;
+                color: #551f1f;
+                position: absolute;
+                right: 5px;
+                top: 50%;
+                -webkit-transform: translateY(-50%);
+                        transform: translateY(-50%);
+            }
 
     .campaign-button-right {
         float: right;
