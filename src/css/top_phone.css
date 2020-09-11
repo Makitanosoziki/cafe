@@ -37,7 +37,7 @@
     #concept {
         width: 100%;
         position: relative;
-        height: 1100px;
+        height: 1080px;
 
         &::before {
             content: "";
@@ -82,13 +82,15 @@
 
     /*画像*/
 
-    .concept-main-figure-img {
+    .concept-main-figure {
         position: absolute;
         bottom: 0;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 93%;
-        max-width: 640px;
+        width: 95%;
+        margin-left: 3.1%;
+    }
+
+    .concept-main-figure-img {
+        width: 49%;
     }
 
     .cakeToka-figure-img {
