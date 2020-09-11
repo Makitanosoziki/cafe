@@ -88,7 +88,7 @@
         width: 95%;
         max-width: 640px;
         right: 50%;
-        /* transform: translateX(50%); */
+        transform: translateX(50%);
     }
 
     .concept-main-figure-img {
