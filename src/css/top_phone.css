@@ -88,7 +88,7 @@
         width: 95%;
         max-width: 640px;
         right: 50%;
-        transform: translateX(50%);
+        /* transform: translateX(50%); */
     }
 
     .concept-main-figure-img {
@@ -104,7 +104,7 @@
         margin-top: 140px;
         text-align: center;
     }
-
+    
     /*文章*/
     .menu_title {
         margin-bottom: 40px;
